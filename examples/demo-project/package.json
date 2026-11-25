@@ -1,0 +1,14 @@
+{
+  "name": "envsentry-demo-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Demo project showcasing EnvSentry CLI and programmatic usage",
+  "scripts": {
+    "check-env": "envsentry check",
+    "demo-api": "node index.js"
+  },
+  "dependencies": {
+    "envsentry": "file:../.."
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "envsentry",
+  "version": "1.0.0",
+  "description": "A lightweight environment configuration validator for Node.js projects.",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "envsentry": "./bin/envsentry.js"
+  },
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "start": "node ./bin/envsentry.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "validator",
+    "dotenv",
+    "cli"
+  ],
+  "author": "Prince Singh",
+  "license": "MIT"
+}
+
