@@ -1,5 +1,5 @@
 import fs from "node:fs";
-import { parseEnv, validateEnv } from "envsentry";
+import { parseEnv, validateEnv } from "envsentry-cli";
 
 const exampleEnv = parseEnv(fs.readFileSync(".env.example", "utf8"));
 const currentEnv = parseEnv(fs.readFileSync(".env", "utf8"));

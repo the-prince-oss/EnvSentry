@@ -1,5 +1,5 @@
 {
-  "name": "envsentry",
+  "name": "envsentry-cli",
   "version": "1.0.0",
   "description": "A lightweight environment configuration validator for Node.js projects.",
   "type": "module",
@@ -20,6 +20,14 @@
     "test": "node --test",
     "start": "node ./bin/envsentry.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-prince-oss/EnvSentry.git"
+  },
+  "homepage": "https://github.com/the-prince-oss/EnvSentry#readme",
+  "bugs": {
+    "url": "https://github.com/the-prince-oss/EnvSentry/issues"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
@@ -28,9 +36,9 @@
     "environment",
     "validator",
     "dotenv",
-    "cli"
+    "cli",
+    "envsentry"
   ],
   "author": "Prince Singh",
   "license": "MIT"
 }
-

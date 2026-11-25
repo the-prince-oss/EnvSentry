@@ -21,19 +21,25 @@ EnvSentry validates your `.env` file against `.env.example` to catch missing, em
 ### Install in a Node.js Project
 
 ```bash
-npm install envsentry
+npm install envsentry-cli
+```
+
+Or install globally so the `envsentry` CLI command is available everywhere:
+
+```bash
+npm install -g envsentry-cli
 ```
 
 Or run directly with `npx`:
 
 ```bash
-npx envsentry check
+npx envsentry-cli check
 ```
 
 ### Local Development / Linking
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/the-prince-oss/EnvSentry.git
 cd EnvSentry
 npm link
 ```
@@ -123,11 +129,11 @@ Summary:
 
 ## Programmatic API Usage
 
-EnvSentry exports `parseEnv` and `validateEnv` for use in your Node.js scripts:
+EnvSentry (`envsentry-cli`) exports `parseEnv` and `validateEnv` for use in your Node.js scripts:
 
 ```js
 import fs from "node:fs";
-import { parseEnv, validateEnv } from "envsentry";
+import { parseEnv, validateEnv } from "envsentry-cli";
 
 // 1. Parse .env content
 const envContent = fs.readFileSync(".env", "utf8");

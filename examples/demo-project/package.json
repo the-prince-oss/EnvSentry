@@ -9,6 +9,6 @@
     "demo-api": "node index.js"
   },
   "dependencies": {
-    "envsentry": "file:../.."
+    "envsentry-cli": "file:../.."
   }
 }
